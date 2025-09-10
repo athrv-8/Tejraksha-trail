@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TejRaksha | Fortifying India's Digital Sovereignty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A192F; /* Deep Navy Blue */
+            color: #E6F1FF; /* Light Slate */
+        }
+        .hero-bg {
+            /* A subtle background image suggesting digital networks or a secure facility would work well here */
+            background-color: #0A192F;
+            background-image: 
+                linear-gradient(to bottom, rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 1)),
+                url('https://placehold.co/1920x1080/0A192F/E6F1FF?text=Abstract+Network');
+            background-size: cover;
+            background-position: center;
+        }
+        .brand-saffron {
+            color: #FF9933;
+        }
+        .bg-brand-saffron {
+            background-color: #FF9933;
+        }
+        .border-brand-saffron {
+            border-color: #FF9933;
+        }
+        .bg-slate-blue {
+             background-color: #112240; /* Lighter navy for cards */
+        }
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            text-align: center;
+        }
+        .section-subtitle {
+            font-size: 1.125rem; /* 18px */
+            color: #8892B0; /* Slate Gray */
+            text-align: center;
+            max-width: 600px;
+            margin: 0.5rem auto 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-gray-900/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider">
+                <span class="text-white">तेज</span><span class="brand-saffron">-रक्षा</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-300 hover:brand-saffron transition duration-300">About Us</a>
+                <a href="#services" class="text-gray-300 hover:brand-saffron transition duration-300">Services</a>
+                <a href="#trust" class="text-gray-300 hover:brand-saffron transition duration-300">Why Trust Us</a>
+                <a href="#contact" class="bg-brand-saffron text-gray-900 font-semibold px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-300">Contact Us</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-300 hover:brand-saffron">About Us</a>
+            <a href="#services" class="block py-2 text-gray-300 hover:brand-saffron">Services</a>
+            <a href="#trust" class="block py-2 text-gray-300 hover:brand-saffron">Why Trust Us</a>
+            <a href="#contact" class="block mt-2 text-center bg-brand-saffron text-gray-900 font-semibold px-4 py-2 rounded-md hover:bg-opacity-90">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4 fade-in">
+                    Fortifying <span class="brand-saffron">India's Digital Sovereignty</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 fade-in" style="transition-delay: 200ms;">
+                    TejRaksha is the nation's premier cyber-sentinel, providing state-of-the-art, sovereign cybersecurity solutions for India's government, defence, and critical infrastructure.
+                </p>
+                <a href="#contact" class="bg-brand-saffron text-gray-900 font-bold text-lg px-8 py-4 rounded-lg hover:bg-opacity-90 transition duration-300 inline-block fade-in" style="transition-delay: 400ms;">
+                    Request a Confidential Briefing
+                </a>
+            </div>
+        </section>
+
+        <!-- Trusted Partner Section -->
+        <section id="about" class="py-20 bg-slate-blue">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="section-title text-white">A Trusted Partner to the Nation</h2>
+                    <p class="section-subtitle">
+                        Our singular mission is to protect the nation's most sensitive digital assets from state-sponsored threats, cyber-terrorism, and sophisticated criminal networks.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center fade-in" style="transition-delay: 200ms;">
+                    <!-- Repeat for each organization -->
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900/50 p-4 rounded-full mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-shield-check text-cyan-400" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.06.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.95-1.025-2.209-1.845-3.962-2.132a1.072 1.072 0 0 0-.862.074l-.494.271a8.532 8.532 0 0 0-1.04-1.204L8 0 5.338 1.59z"/><path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/></svg>
+                        </div>
+                        <h3 class="font-semibold text-white">Law Enforcement<br>(Police, CBI)</h3>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900/50 p-4 rounded-full mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-airplane text-cyan-400" viewBox="0 0 16 16"><path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151L9.861 3.73 12.31 4a.5.5 0 0 1 .437.695L12 8.306l4.21 2.722a.5.5 0 0 1 .04 1.063l-2.185 1.41-3.422 3.422a.5.5 0 0 1-.849-.04l-3.422-3.422L.79 12.09a.5.5 0 0 1 .04-1.063L5 8.305 3.753 4.695A.5.5 0 0 1 4.19 4l2.45-1.27L6.428 1.151z"/></svg>
+                        </div>
+                        <h3 class="font-semibold text-white">Defence & Aerospace<br>(DRDO)</h3>
+                    </div>
+                     <div class="flex flex-col items-center">
+                        <div class="bg-gray-900/50 p-4 rounded-full mb-3">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-broadcast text-cyan-400" viewBox="0 0 16 16"><path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656 0a4 4 0 0 0 0 5.656.5.5 0 0 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm2.122-2.122a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg>
+                        </div>
+                        <h3 class="font-semibold text-white">Space & Research<br>(ISRO)</h3>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900/50 p-4 rounded-full mb-3">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-building text-cyan-400" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V5h1V.5a.5.5 0 0 1 .237-.425zM6 15v-1H1v1h5zM1 13h5v-1H1v1zm0-2h5V9H1v2zm0-3h5V6H1v2zm0-3h5V3H1v2zm6 2h2V3h-2v2zm0 3h2V6h-2v2zm0 3h2V9h-2v2zm0 3h2v-2h-2v2zm3-11h2V3h-2v2zm0 3h2V6h-2v2zm0 3h2V9h-2v2z"/></svg>
+                        </div>
+                        <h3 class="font-semibold text-white">Public Sector<br>(PSUs)</h3>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-900/50 p-4 rounded-full mb-3">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-bank text-cyan-400" viewBox="0 0 16 16"><path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1-.5.5H1.5a.5.5 0 0 1-.5-.5V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h3V7H2zm4 0v7h3V7H6zm4 0v7h3V7h-3zm1.5-1.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1zm-4 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1z"/></svg>
+                        </div>
+                        <h3 class="font-semibold text-white">Ministries & <br>E-Governance</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Trust Us Section -->
+        <section id="trust" class="py-20 bg-gray-900/30">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12 fade-in">
+                    <h2 class="section-title text-white">The Bedrock of Our Partnership</h2>
+                    <p class="section-subtitle">
+                        Why India's guardians trust TejRaksha for their most critical missions.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 fade-in" style="transition-delay: 200ms;">
+                    <!-- Trust Pillar 1 -->
+                    <div class="bg-slate-blue p-6 rounded-lg border border-gray-700 hover:border-brand-saffron transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="mb-4">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-lock-fill brand-saffron" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-xl text-white mb-2">Absolute Data Sovereignty</h3>
+                        <p class="text-gray-400">Our entire infrastructure is hosted on Indian soil. Your data, intelligence, and operations are perpetually under Indian jurisdiction, insulated from foreign access and laws.</p>
+                    </div>
+                    <!-- Trust Pillar 2 -->
+                    <div class="bg-slate-blue p-6 rounded-lg border border-gray-700 hover:border-brand-saffron transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-check-fill brand-saffron" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/><path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-xl text-white mb-2">Uncompromising Vetting</h3>
+                        <p class="text-gray-400">Every member of our team undergoes rigorous background checks and holds national security clearances. We operate with the discipline and discretion of an intelligence agency.</p>
+                    </div>
+                    <!-- Trust Pillar 3 -->
+                    <div class="bg-slate-blue p-6 rounded-lg border border-gray-700 hover:border-brand-saffron transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-flag-fill brand-saffron" viewBox="0 0 16 16"><path d="M4.5 4.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8.5 4.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5z"/><path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5v-7z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-xl text-white mb-2">Mission-Centric Alignment</h3>
+                        <p class="text-gray-400">We are not a vendor; we are a strategic national asset. Our success is measured by the successful defence of India's digital frontiers, fully aligned with national interests.</p>
+                    </div>
+                    <!-- Trust Pillar 4 -->
+                    <div class="bg-slate-blue p-6 rounded-lg border border-gray-700 hover:border-brand-saffron transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cpu-fill brand-saffron" viewBox="0 0 16 16"><path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/><path d="M.5 2.5A2.5 2.5 0 0 1 3 0h10a2.5 2.5 0 0 1 2.5 2.5v10A2.5 2.5 0 0 1 13.5 16h-11A2.5 2.5 0 0 1 0 13.5v-11A2.5 2.5 0 0 1 .5 2.5zM4 2a.5.5 0 0 0-.5.5V4h1.5V2.5a.5.5 0 0 0-.5-.5h-.5zm1.5 0V4H7V2.5a.5.5 0 0 0-.5-.5h-1zm2 0V4h1.5V2.5a.5.5 0 0 0-.5-.5h-.5zm1.5 0V4H12v-.5a.5.5 0 0 0-.5-.5h-1zm-6 3.5V7H4.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H6v1.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V10h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H8V6.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4.5 1.5a.5.5 0 0 0-.5.5V10h1.5v-.5a.5.5 0 0 0-.5-.5h-1zm-6 2.5V12h1.5v-.5a.5.5 0 0 0-.5-.5h-.5zm1.5 0V12H7v-.5a.5.5 0 0 0-.5-.5h-1zm2 0V12h1.5v-.5a.5.5 0 0 0-.5-.5h-.5zm1.5 0V12H12v-.5a.5.5 0 0 0-.5-.5h-1zm-6 3.5a.5.5 0 0 0-.5.5V14h1.5v-.5a.5.5 0 0 0-.5-.5h-.5zm1.5 0V14H7v-.5a.5.5 0 0 0-.5-.5h-1zm2 0V14h1.5v-.5a.5.5 0 0 0-.5-.5h-.5zm1.5 0V14H12v-.5a.5.5 0 0 0-.5-.5h-1z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-xl text-white mb-2">Proven Technical Supremacy</h3>
+                        <p class="text-gray-400">Our teams are comprised of veterans from the Indian Armed Forces, intelligence agencies, and premier technical institutions, combining operational experience with elite technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12 fade-in">
+                    <h2 class="section-title text-white">Comprehensive 360° Cyber Defence</h2>
+                    <p class="section-subtitle">
+                        A complete arsenal of capabilities to anticipate, defend against, and respond to all forms of cyber threats.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in" style="transition-delay: 200ms;">
+                    <!-- Service 1 -->
+                    <div class="bg-slate-blue p-8 rounded-lg shadow-lg">
+                        <h3 class="brand-saffron font-bold text-xl mb-3">Strategic Advisory & Risk Management</h3>
+                        <ul class="text-gray-400 space-y-2 list-disc list-inside">
+                            <li>Cybersecurity Audits & Compliance (CERT-In)</li>
+                            <li>Critical Infrastructure Risk Assessment</li>
+                            <li>Vulnerability Assessment & Penetration Testing</li>
+                            <li>Red Teaming & Adversary Simulation</li>
+                        </ul>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-slate-blue p-8 rounded-lg shadow-lg">
+                        <h3 class="brand-saffron font-bold text-xl mb-3">Defensive Security & Hardening</h3>
+                        <ul class="text-gray-400 space-y-2 list-disc list-inside">
+                            <li>Network Security Architecture Fortification</li>
+                            <li>Endpoint Detection & Response (EDR)</li>
+                            <li>SCADA & Industrial Control Systems (ICS) Security</li>
+                            <li>Cryptography & Secure Communications</li>
+                        </ul>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-slate-blue p-8 rounded-lg shadow-lg">
+                        <h3 class="brand-saffron font-bold text-xl mb-3">24/7 Managed Security Operations</h3>
+                        <ul class="text-gray-400 space-y-2 list-disc list-inside">
+                            <li>Real-time Threat Monitoring (SOC)</li>
+                            <li>Advanced Threat Hunting & Intelligence</li>
+                            <li>Rapid Incident Response & Crisis Management</li>
+                            <li>Security Event Management (SIEM)</li>
+                        </ul>
+                    </div>
+                    <!-- Service 4 -->
+                     <div class="bg-slate-blue p-8 rounded-lg shadow-lg">
+                        <h3 class="brand-saffron font-bold text-xl mb-3">Digital Forensics & Investigation</h3>
+                        <ul class="text-gray-400 space-y-2 list-disc list-inside">
+                            <li>Digital Evidence Collection & Preservation</li>
+                            <li>Malware Analysis & Reverse Engineering</li>
+                            <li>Dark Web Monitoring & Intelligence</li>
+                            <li>Technical Support for Law Enforcement</li>
+                        </ul>
+                    </div>
+                     <!-- Service 5 -->
+                     <div class="bg-slate-blue p-8 rounded-lg shadow-lg">
+                        <h3 class="brand-saffron font-bold text-xl mb-3">Capacity Building & Training</h3>
+                        <ul class="text-gray-400 space-y-2 list-disc list-inside">
+                            <li>Specialized Training for Police & Defence</li>
+                            <li>Cyber Crisis Simulation Drills for Leadership</li>
+                            <li>Security Awareness Programs for Employees</li>
+                            <li>Secure Coding Workshops for De
