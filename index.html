@@ -253,4 +253,125 @@
                             <li>Specialized Training for Police & Defence</li>
                             <li>Cyber Crisis Simulation Drills for Leadership</li>
                             <li>Security Awareness Programs for Employees</li>
-                            <li>Secure Coding Workshops for De
+                            <li>Secure Coding Workshops for Developers</li>
+                        </ul>
+                    </div>
+                     <!-- Service 6 -->
+                     <div class="bg-slate-blue p-8 rounded-lg shadow-lg">
+                        <h3 class="brand-saffron font-bold text-xl mb-3">Threat Intelligence Centre</h3>
+                        <ul class="text-gray-                        <ul class="text-gray-400 space-y-2 list-disc list-inside">
+                            400 space-y-2 list-disc list-inside">
+                            <li>Weekly Threat Briefings for Partners</li>
+                            <li>Real-time Security Advisories</li>
+                            <li>In-depth Research on Threat Actors</li>
+                            <li>Proactive Vulnerability Disclosures</li>
+                        </ul>
+                           </div>
+         </div>
+   </div>
+        </section>
+
+              <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-slate-blue">
+            <div class="container mx-auto px-6 fade-in">
+                 <div class="text-center mb-10">
+                    <h2 class="section-title text-white">Initiate a Secure & Confidential Dialogue</h2>
+                    <p class="section-subtitle">
+                        For all inquiries, please use the secure channels provided below. We treat every communication with the utmost confidentiality and discretion.
+                    </p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-gray-900/40 p-8 rounded-lg border border-gray-700">
+                    <p class="text-center text-gray-400 mb-6">Please do not transmit classified or sensitive information through public channels. We recommend contacting us via official means for substantive discussions.</p>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-center">
+                        <div class="flex-1">
+                            <h4 class="text-xl font-semibold brand-saffron mb-2">Primary Contact</h4>
+                            <p class="text-white">Encrypted Email:</p>
+                            <a href="mailto:contact.secure@tejraksha.in" class="text-cyan-400 hover:underline">contact.secure@tejraksha.in</a>
+                        </div>
+                         <div class="w-px h-16 bg-gray-700 hidden md:block"></div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-semibold brand-saffron mb-2">Headquarters</h4>
+                            <p class="text-white">CGO Complex, Lodhi Road</p>
+                            <p class="text-gray-400">New Delhi, 110003, India</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-8">
+                        <p class="text-sm text-gray-500">PGP Public Key available upon request for end-to-end encrypted communication.</p>
+                    </div>               
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- Footer -->
+    <footer class="bg-gray-900/50">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+            <p>&copy; <span id="year"></span> TejRaksha Cyber Solutions Pvt. Ltd. All Rights Reserved.</p>
+            <p class="font-bold text-lg mt-2 brand-saffron">जय हिन्द | Jai Hind 🇮🇳</p>
+        </div>
+    </footer>
+
+      <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+          // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+          // Close mobile menu when a link is clicked
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+          // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+
+          // Fade-in animation on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = {
+            threshold: 0.2,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+  
+          faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+
+              </script>
+</body>
+</html>
+
+          
+          
+          
+          
+          
+          
+          
+          
+                                          
